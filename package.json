@@ -1,0 +1,31 @@
+{
+  "name": "spells",
+  "version": "0.0.0",
+  "description": "360 spells of 360 colors",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "node ./bin/build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcatliu/spells.git"
+  },
+  "keywords": [
+    "spells",
+    "game",
+    "colors",
+    "magic"
+  ],
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcatliu/spells/issues"
+  },
+  "homepage": "https://github.com/xcatliu/spells#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0"
+  }
+}

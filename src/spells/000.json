@@ -1,0 +1,25 @@
+{
+  "id": 0,
+  "color": {
+    "hue": 0,
+    "red": 255,
+    "green": 0,
+    "blue": 0,
+    "hex": "#ff0000"
+  },
+  "name": "Fireball",
+  "chineseName": "火球术",
+  "type": 0,
+  "cost": 1,
+  "range": 10,
+  "castTime": 1,
+  "cooldown": 0,
+  "ability": 0,
+  "affects": 0,
+  "effects": [
+    {
+      "type": 0,
+      "damage": 1
+    }
+  ]
+}
