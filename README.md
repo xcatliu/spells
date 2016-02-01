@@ -4,9 +4,40 @@
 
 ## Spells Table
 
-| ID | Color | Name | Type | Cost | Range | CastTime | Cooldown | Ability | Affects | Effects | Comments |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0  | <span style="background: #ff0000; color: #ffffff; padding: 0 0.2em;">#ff0000</span> | Fireball 火球术 | Damage | 1 | 10 | 1 | 0 | Unit Target | Enemy Units | Damage-1-Fire | |
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Color</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Cost</th>
+      <th>Range</th>
+      <th>CastTime</th>
+      <th>Cooldown</th>
+      <th>Ability</th>
+      <th>Affects</th>
+      <th>Effects</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td><code style="background: #ff0000; color: #ffffff;">#ff0000</code></td>
+      <td>Fireball 火球术</td>
+      <td>Damage</td>
+      <td>1</td>
+      <td>10</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Unit Target</td>
+      <td>Enemy Units</td>
+      <td>Damage-1-Fire</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## Links
 
