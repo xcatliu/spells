@@ -24,7 +24,7 @@
   <tbody>
     <tr>
       <td>0</td>
-      <td><code style="background: #ff0000; color: #ffffff;">#ff0000</code></td>
+      <td><span style="background: #ff0000; color: #ffffff;">#ff0000</span></td>
       <td>Fireball 火球术</td>
       <td>Damage</td>
       <td>1</td>
