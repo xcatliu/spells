@@ -2,10 +2,14 @@
   "id": 0,
   "color": {
     "hue": 0,
+    "saturation": 100,
+    "lightness": 50,
+    "alpha": 1,
     "red": 255,
     "green": 0,
     "blue": 0,
-    "hex": "#ff0000"
+    "hex": "#ff0000",
+    "name": "red"
   },
   "name": "Fireball",
   "chineseName": "火球术",
@@ -19,7 +23,7 @@
   "effects": [
     {
       "type": 0,
-      "damage": 1
+      "damage": 10
     }
   ]
 }
