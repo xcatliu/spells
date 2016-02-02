@@ -13,9 +13,10 @@
   },
   "name": "Fireball",
   "chinese_name": "火球",
+  "description": "Balabala...",
+  "chinese_description": "聚集火焰的力量",
   "type": 0,
   "cost": 10,
-  "range": 10,
   "cast_time": 1,
   "cooldown": 0,
   "effects": [

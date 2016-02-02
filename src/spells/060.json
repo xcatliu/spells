@@ -1,0 +1,34 @@
+{
+  "id": 60,
+  "color": {
+    "hue": 60,
+    "saturation": 100,
+    "lightness": 50,
+    "alpha": 1,
+    "red": 255,
+    "green": 255,
+    "blue": 0,
+    "hex": "#ffff00",
+    "name": "yellow"
+  },
+  "name": "Speed Up",
+  "chinese_name": "加速",
+  "description": "Increase speed in a short time",
+  "chinese_description": "短时间内增加速度",
+  "type": 1,
+  "cost": 10,
+  "cast_time": 1,
+  "cooldown": 0,
+  "effects": [
+    {
+      "effect_type": 1,
+      "duration": 5,
+      "benefits": [
+        {
+          "attribute": "speed",
+          "increase": 10,
+        }
+      ]
+    }
+  ]
+}
