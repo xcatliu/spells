@@ -12,18 +12,17 @@
     "name": "red"
   },
   "name": "Fireball",
-  "chineseName": "火球术",
+  "chinese_name": "火球",
   "type": 0,
   "cost": 10,
   "range": 10,
-  "castTime": 1,
+  "cast_time": 1,
   "cooldown": 0,
-  "ability": 0,
-  "affects": 0,
   "effects": [
     {
-      "type": 0,
-      "damage": 10
+      "effect_type": 0,
+      "damage": 10,
+      "damage_type": 0
     }
   ]
 }

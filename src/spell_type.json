@@ -1,0 +1,44 @@
+[
+  {
+    "id": 0,
+    "name": "Damage",
+    "chinese_name": "伤害",
+    "description": "Balabala...",
+    "chinese_description": "伤害型法术一般会直接对敌方造成伤害"
+  },
+  {
+    "id": 1,
+    "name": "Buff",
+    "chinese_name": "增益",
+    "description": "Balabala...",
+    "chinese_description": "增益型法术可以增加己方作战能力"
+  },
+  {
+    "id": 2,
+    "name": "Healing",
+    "chinese_name": "治疗",
+    "description": "Balabala...",
+    "chinese_description": "治疗型法术用于为己方疗伤或者驱散减益效果"
+  },
+  {
+    "id": 3,
+    "name": "Illusion",
+    "chinese_name": "幻术",
+    "description": "Balabala...",
+    "chinese_description": "幻术一般不直接造成伤害，但是会扰乱敌方的行为"
+  },
+  {
+    "id": 4,
+    "name": "Summon",
+    "chinese_name": "召唤",
+    "description": "Balabala...",
+    "chinese_description": "召唤异次元生物帮忙战斗"
+  },
+  {
+    "id": 5,
+    "name": "Debuff",
+    "chinese_name": "减益",
+    "description": "Balabala...",
+    "chinese_description": "减益型法术一般会对敌方持续造成伤害，或者降低地方作战能力"
+  }
+]
