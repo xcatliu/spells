@@ -12,7 +12,7 @@ Each hue represents a spell, there are 360 spells of 360 colors.
 
 | Hue | Color | Name | Type | Cost | Range | CastTime | Cooldown | Ability | Affects | Effects | Comments |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [0](https://github.com/xcatliu/spells/blob/master/src/spells/000.json)  | `#ff0000` red | Fireball 火球 | Damage 伤害 | 1 | 10 | 1 | 0 | Unit Target | Enemy Units | Damage-10-Fire | [wow fireball](http://www.wowhead.com/spell=133/fireball) |
+| [0](https://github.com/xcatliu/spells/blob/master/src/spells/000.json)  | `#ff0000` red | Fireball 火球 | Damage 伤害 | 10 | 10 | 1 | 0 | Unit Target | Enemy Units | Damage-10-Fire | [wow fireball](http://www.wowhead.com/spell=133/fireball) |
 | 60 | `#ffff00` yellow | 加速 | 增益
 | 120 | `#00ff00` green | 治疗 | 治疗
 | 180 | `#00ffff` cyanogen | 致盲 | 幻术

@@ -14,7 +14,7 @@
   "name": "Fireball",
   "chineseName": "火球术",
   "type": 0,
-  "cost": 1,
+  "cost": 10,
   "range": 10,
   "castTime": 1,
   "cooldown": 0,
