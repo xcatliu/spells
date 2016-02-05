@@ -1,0 +1,17 @@
+{
+  "hue": 5,
+  "color": "#ff00ff",
+  "name": "Poison",
+  "description": "Balabala...",
+  "type": 5,
+  "cost": 10,
+  "cooldown": 0,
+  "effects": [
+    {
+      "effect_type": 5,
+      "duration": 5,
+      "frequency": 1,
+      "damage": 3
+    }
+  ]
+}

@@ -10,14 +10,14 @@ Each hue represents a spell, there are 360 spells of 360 colors.
 
 ## Spells Table
 
-| Hue | Color | Name | Type | Cost | Cast Time | Cooldown | Effects | Comments |
+| Hue | Color | Name | Type | Cost | Cooldown | Effects | Comments |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| [0](https://github.com/xcatliu/spells/blob/master/src/spells/000.json)  | `#ff0000` red | Fireball 火球 | Damage 伤害 | 10 | 1 | 0 | Damage-10-Magical | [wow fireball](http://www.wowhead.com/spell=133/fireball) |
-| 60 | `#ffff00` yellow | Speed Up 加速 | Buff 增益 | 10 | 1 | 0 | Buff-5-Speed-10 | |
-| 120 | `#00ff00` green | Heal 治疗 | Healing 治疗
-| 180 | `#00ffff` cyanogen | Blinding 致盲 | Illusion 幻术
-| 240 | `#0000ff` blue | Summon Water Elemental 召唤水元素 | Summon 召唤
-| 300 | `#ff00ff` purple | Poison 下毒 | Debuff 减益
+| [000] | `#ff0000` | Fireball | Damage | 10 | 0 | Magical-Damage-10 | [wow fireball] |
+| [060] | `#ffff00` | Sharpen | Buff | 10 | 0 | Buff-5-Attack-10 | |
+| [120] | `#00ff00` | Heal | Healing | 10 | 0 | Restore-Health-10 | |
+| [180] | `#00ffff` | Sleep | Illusion | 10 | 5 | Stun-3 | |
+| [240] | `#0000ff` | Summon Water Elemental | Summon | 50 | 10 | Summon-10-Water-Elemental | |
+| [300] | `#ff00ff` | Poison | Debuff | 10 | 0 | Magical-DoT-5-1-3 | |
 
 ## Links
 
@@ -27,3 +27,12 @@ Each hue represents a spell, there are 360 spells of 360 colors.
 - http://magic-spells-and-potions.com/color_magic_colour_magic.htm
 - http://dota2.gamepedia.com/Abilities
 - http://wiki.teamliquid.net/dota2/Abilities
+
+[wow fireball]: http://www.wowhead.com/spell=133/fireball
+
+[000]: https://github.com/xcatliu/spells/blob/master/src/spells/000.json
+[060]: https://github.com/xcatliu/spells/blob/master/src/spells/060.json
+[120]: https://github.com/xcatliu/spells/blob/master/src/spells/120.json
+[180]: https://github.com/xcatliu/spells/blob/master/src/spells/180.json
+[240]: https://github.com/xcatliu/spells/blob/master/src/spells/240.json
+[300]: https://github.com/xcatliu/spells/blob/master/src/spells/300.json

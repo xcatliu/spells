@@ -1,29 +1,15 @@
 {
-  "id": 0,
-  "color": {
-    "hue": 0,
-    "saturation": 100,
-    "lightness": 50,
-    "alpha": 1,
-    "red": 255,
-    "green": 0,
-    "blue": 0,
-    "hex": "#ff0000",
-    "name": "red"
-  },
+  "hue": 0,
+  "color": "#ff0000",
   "name": "Fireball",
-  "chinese_name": "火球",
   "description": "Balabala...",
-  "chinese_description": "聚集火焰的力量",
   "type": 0,
   "cost": 10,
-  "cast_time": 1,
   "cooldown": 0,
   "effects": [
     {
       "effect_type": 0,
       "damage": 10,
-      "damage_type": 0
     }
   ]
 }

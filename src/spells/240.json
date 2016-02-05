@@ -1,0 +1,16 @@
+{
+  "hue": 240,
+  "color": "#0000ff",
+  "name": "Summon Water Elemental",
+  "description": "Balabala...",
+  "type": 4,
+  "cost": 50,
+  "cooldown": 10,
+  "effects": [
+    {
+      "effect_type": 4,
+      "duration": 10,
+      "monster": 0
+    }
+  ]
+}

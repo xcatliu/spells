@@ -1,0 +1,55 @@
+[
+  {
+    "id": 0,
+    "name": "Magical Damage",
+    "description": "Balabala...",
+    "fields": [
+      "damage"
+    ]
+  },
+  {
+    "id": 1,
+    "name": "Buff",
+    "description": "Balabala...",
+    "fields": [
+      "duration",
+      "attribute",
+      "increase"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Restore Health",
+    "description": "Balabala...",
+    "fields": [
+      "restore"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Stun",
+    "description": "Balabala...",
+    "fields": [
+      "duration"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Summon",
+    "description": "Balabala...",
+    "fields": [
+      "duration",
+      "monster"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Magical DoT",
+    "description": "Balabala...",
+    "fields": [
+      "duration",
+      "frequency",
+      "damage"
+    ]
+  }
+]

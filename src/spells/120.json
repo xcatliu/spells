@@ -1,0 +1,15 @@
+{
+  "hue": 120,
+  "color": "#00ff00",
+  "name": "Heal",
+  "description": "Balabala...",
+  "type": 2,
+  "cost": 10,
+  "cooldown": 0,
+  "effects": [
+    {
+      "effect_type": 2,
+      "restore": 10,
+    }
+  ]
+}

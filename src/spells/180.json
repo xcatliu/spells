@@ -1,0 +1,15 @@
+{
+  "hue": 180,
+  "color": "#00ffff",
+  "name": "Sleep",
+  "description": "Balabala...",
+  "type": 3,
+  "cost": 10,
+  "cooldown": 5,
+  "effects": [
+    {
+      "effect_type": 3,
+      "duration": 3,
+    }
+  ]
+}
