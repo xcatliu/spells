@@ -2,31 +2,31 @@
   {
     "id": 0,
     "name": "Damage",
-    "description": "Balabala...",
+    "description": "Balabala..."
   },
   {
     "id": 1,
     "name": "Buff",
-    "description": "Balabala...",
+    "description": "Balabala..."
   },
   {
     "id": 2,
     "name": "Healing",
-    "description": "Balabala...",
+    "description": "Balabala..."
   },
   {
     "id": 3,
     "name": "Illusion",
-    "description": "Balabala...",
+    "description": "Balabala..."
   },
   {
     "id": 4,
     "name": "Summon",
-    "description": "Balabala...",
+    "description": "Balabala..."
   },
   {
     "id": 5,
     "name": "Debuff",
-    "description": "Balabala...",
+    "description": "Balabala..."
   }
 ]
