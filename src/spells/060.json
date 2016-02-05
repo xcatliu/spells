@@ -2,6 +2,7 @@
   "hue": 60,
   "color": "#ffff00",
   "name": "Sharpen",
+  "icon": "fa-level-up",
   "description": "Balabala...",
   "type": 1,
   "cost": 10,

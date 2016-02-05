@@ -2,6 +2,7 @@
   "hue": 240,
   "color": "#0000ff",
   "name": "Summon Water Elemental",
+  "icon": "fa-android",
   "description": "Balabala...",
   "type": 4,
   "cost": 50,

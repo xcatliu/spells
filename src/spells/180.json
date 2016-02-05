@@ -2,6 +2,7 @@
   "hue": 180,
   "color": "#00ffff",
   "name": "Sleep",
+  "icon": "fa-bed",
   "description": "Balabala...",
   "type": 3,
   "cost": 10,

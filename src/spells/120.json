@@ -2,6 +2,7 @@
   "hue": 120,
   "color": "#00ff00",
   "name": "Heal",
+  "icon": "fa-plus",
   "description": "Balabala...",
   "type": 2,
   "cost": 10,

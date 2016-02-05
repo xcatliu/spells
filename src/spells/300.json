@@ -2,6 +2,7 @@
   "hue": 5,
   "color": "#ff00ff",
   "name": "Poison",
+  "icon": "fa-tint",
   "description": "Balabala...",
   "type": 5,
   "cost": 10,

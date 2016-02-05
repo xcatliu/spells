@@ -2,6 +2,7 @@
   "hue": 0,
   "color": "#ff0000",
   "name": "Fireball",
+  "icon": "fa-pinterest-p",
   "description": "Balabala...",
   "type": 0,
   "cost": 10,
