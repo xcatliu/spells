@@ -4,12 +4,53 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Spells</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/index.css">
 </head>
 <body>
   
-Sharpen
+<h1 class="title">360 Spells of 360 Colors</h1>
+<div class="container clearfix">
+  <div
+    class="spell spell-large"
+    style="border-color: hsl(60, 100%, 50%)"
+    title="Sharpen"
+  >
+    <i
+      class="spell_icon fa fa-location-arrow"
+      style="color: hsl(60, 100%, 50%)"
+    ></i>
+  </div>
+  <div class="spell_name_container">
+    <h2 class="spell_name">Sharpen</h2>
+  </div>
+</div>
+<div class="container">
+  <pre class="spell_content"><code>{
+    &quot;hue&quot;: 60,
+    &quot;color&quot;: &quot;hsl(60, 100%, 50%)&quot;,
+    &quot;name&quot;: &quot;Sharpen&quot;,
+    &quot;icon&quot;: &quot;fa-location-arrow&quot;,
+    &quot;description&quot;: &quot;Balabala...&quot;,
+    &quot;type&quot;: 1,
+    &quot;cost&quot;: 10,
+    &quot;cooldown&quot;: 0,
+    &quot;effects&quot;: [
+        {
+            &quot;effect_type&quot;: 1,
+            &quot;duration&quot;: 5,
+            &quot;attribute&quot;: &quot;Attack&quot;,
+            &quot;increase&quot;: 10,
+            &quot;effect_type_name&quot;: &quot;Buff&quot;
+        }
+    ],
+    &quot;spell_json&quot;: &quot;/spells/060.json&quot;,
+    &quot;spell_html&quot;: &quot;/spells/060.html&quot;,
+    &quot;type_name&quot;: &quot;Buff&quot;
+}</code></pre>
+</div>
 
 </body>
 </html>

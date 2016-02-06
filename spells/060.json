@@ -2,7 +2,7 @@
   "hue": 60,
   "color": "hsl(60, 100%, 50%)",
   "name": "Sharpen",
-  "icon": "fa-level-up",
+  "icon": "fa-location-arrow",
   "description": "Balabala...",
   "type": 1,
   "cost": 10,
