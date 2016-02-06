@@ -2,7 +2,7 @@
   "hue": 0,
   "color": "hsl(0, 100%, 50%)",
   "name": "Fireball",
-  "icon": "fa-pinterest-p",
+  "icon": "fa-pinterest-p fa-flip-horizontal",
   "description": "Balabala...",
   "type": 0,
   "cost": 10,

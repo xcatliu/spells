@@ -67,7 +67,7 @@ gulp.task('build:site:sass', () => {
 
 gulp.task('build:site:index', () => {
   const swig = require('gulp-swig');
-  const data = require('./lib');
+  const data = normalizeData(require('./lib'));
 
   gulp.src('./site/index.html')
     .pipe(swig({
@@ -81,13 +81,13 @@ gulp.task('build:site:index', () => {
 
 gulp.task('build:site:spells', () => {
   const swig = require('gulp-swig');
-  const data = require('./lib');
+  const data = normalizeData(require('./lib'));
   const rename = require('gulp-rename');
 
   data.spells.forEach((spell, index) => {
     gulp.src('./site/spell.html')
       .pipe(swig({
-        data: Object.assign({}, data, { hue: index }),
+        data: Object.assign({}, data, { spell }),
         defaults: {
           cache: false,
         },
@@ -173,4 +173,16 @@ function numberToString(num) {
   if (num < 10) return '00' + num;
   if (num < 100) return '0' + num;
   return num;
+}
+
+function normalizeData(data) {
+  const result = Object.assign({}, data);
+  result.spells = data.spells.map((spell) => {
+    const name = numberToString(spell.hue);
+    return Object.assign({}, spell, {
+      spell_json: '/spells/' + name + '.json',
+      spell_html: '/spells/' + name + '.html',
+    });
+  });
+  return result;
 }

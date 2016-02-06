@@ -1,5 +1,20 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-{{ spells[hue].name }}
+<h1 class="title">360 Spells of 360 Colors</h1>
+<div class="container">
+  <div
+    class="spell spell-large"
+    style="border-color: {{ spell.color }}"
+    title="{{ spell.name }}"
+  >
+    <i
+      class="spell_icon fa {{ spell.icon }}"
+      style="color: {% if spell.cost === 999 %}#333{% else %}{{ spell.color }}{% endif %}"
+    ></i>
+  </div>
+  <div class="spell_name_container">
+    <h2 class="spell_name">{{ spell.name }}</h2>
+  </div>
+</div>
 {% endblock %}
