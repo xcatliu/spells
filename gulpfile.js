@@ -1,6 +1,9 @@
-/* eslint no-console:0, no-use-before-define:0 */
+/* eslint no-console:0, no-use-before-define:0, no-var:0 */
 
 const gulp = require('gulp');
+
+/* default */
+gulp.task('default', ['build:site:watch', 'serve']);
 
 /* clean */
 gulp.task('clean', ['clean:gh-pages', 'clean:lib']);
@@ -36,7 +39,14 @@ gulp.task('build:site', [
   'build:site:copy',
   'build:site:sass',
   'build:site:index',
+  'build:site:spells',
 ]);
+
+gulp.task('build:site:watch', ['build:site'], () => {
+  gulp.watch('./src/**/*.json', ['build:site:copy']);
+  gulp.watch('./site/**/*.html', ['build:site:index', 'build:site:spells']);
+  gulp.watch('./site/sass/**', ['build:site:sass']);
+});
 
 gulp.task('build:site:copy', () => {
   gulp.src('./src/**/*.json').pipe(gulp.dest('./gh-pages'));
@@ -55,8 +65,31 @@ gulp.task('build:site:index', () => {
   const data = require('./lib');
 
   gulp.src('./site/index.html')
-    .pipe(swig({ data }))
+    .pipe(swig({
+      data,
+      defaults: {
+        cache: false,
+      },
+    }))
     .pipe(gulp.dest('./gh-pages'));
+});
+
+gulp.task('build:site:spells', () => {
+  const swig = require('gulp-swig');
+  const data = require('./lib');
+  const rename = require('gulp-rename');
+
+  data.spells.forEach((spell, index) => {
+    gulp.src('./site/spell.html')
+      .pipe(swig({
+        data: Object.assign({}, data, { hue: index }),
+        defaults: {
+          cache: false,
+        },
+      }))
+      .pipe(rename(numberToString(index) + '.html'))
+      .pipe(gulp.dest('./gh-pages/spells'));
+  });
 });
 
 /* serve */
@@ -79,8 +112,7 @@ gulp.task('prepublish', ['clean:lib', 'build:lib']);
 
 /* util */
 gulp.task('generate_spells', () => {
-  let i;
-  let obj;
+  var i;
   const fs = require('fs');
   const path = require('path');
   for (i = 0; i < 360; i++) {
@@ -90,7 +122,7 @@ gulp.task('generate_spells', () => {
     if (i === 180) continue;
     if (i === 240) continue;
     if (i === 300) continue;
-    obj = {
+    const obj = {
       hue: i,
       color: 'hsl(' + i + ', 100%, 50%)',
       name: '?',
@@ -102,14 +134,15 @@ gulp.task('generate_spells', () => {
       effects: [],
     };
     fs.writeFileSync(
-      path.resolve(__dirname, 'src/spells', stringify(i) + '.json'),
+      path.resolve(__dirname, 'src/spells', numberToString(i) + '.json'),
       JSON.stringify(obj, null, 2) + '\n', 'utf-8'
     );
   }
 
-  function stringify(num) {
-    if (num < 10) return '00' + num;
-    if (num < 100) return '0' + num;
-    return num;
-  }
 });
+
+function numberToString(num) {
+  if (num < 10) return '00' + num;
+  if (num < 100) return '0' + num;
+  return num;
+}
