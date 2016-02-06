@@ -1,0 +1,11 @@
+{
+  "hue": 102,
+  "color": "hsl(102, 100%, 50%)",
+  "name": "?",
+  "icon": "fa-question",
+  "description": "Balabala...",
+  "type": 0,
+  "cost": 999,
+  "cooldown": 0,
+  "effects": []
+}

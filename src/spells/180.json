@@ -1,6 +1,6 @@
 {
   "hue": 180,
-  "color": "#00ffff",
+  "color": "hsl(180, 100%, 50%)",
   "name": "Sleep",
   "icon": "fa-bed",
   "description": "Balabala...",

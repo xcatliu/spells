@@ -1,6 +1,6 @@
 {
   "hue": 5,
-  "color": "#ff00ff",
+  "color": "hsl(300, 100%, 50%)",
   "name": "Poison",
   "icon": "fa-tint",
   "description": "Balabala...",

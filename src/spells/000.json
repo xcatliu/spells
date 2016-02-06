@@ -1,6 +1,6 @@
 {
   "hue": 0,
-  "color": "#ff0000",
+  "color": "hsl(0, 100%, 50%)",
   "name": "Fireball",
   "icon": "fa-pinterest-p",
   "description": "Balabala...",

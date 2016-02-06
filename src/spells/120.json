@@ -1,6 +1,6 @@
 {
   "hue": 120,
-  "color": "#00ff00",
+  "color": "hsl(120, 100%, 50%)",
   "name": "Heal",
   "icon": "fa-plus",
   "description": "Balabala...",

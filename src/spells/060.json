@@ -1,6 +1,6 @@
 {
   "hue": 60,
-  "color": "#ffff00",
+  "color": "hsl(60, 100%, 50%)",
   "name": "Sharpen",
   "icon": "fa-level-up",
   "description": "Balabala...",
