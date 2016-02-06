@@ -182,6 +182,12 @@ function normalizeData(data) {
     return Object.assign({}, spell, {
       spell_json: '/spells/' + name + '.json',
       spell_html: '/spells/' + name + '.html',
+      type_name: data.spell_types[spell.type].name,
+      effects: spell.effects.map((effect) => {
+        return Object.assign({}, effect, {
+          effect_type_name: data.effect_types[effect.effect_type].name,
+        });
+      }),
     });
   });
   return result;

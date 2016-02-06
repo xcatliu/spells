@@ -2,7 +2,7 @@
 
 {% block content %}
 <h1 class="title">360 Spells of 360 Colors</h1>
-<div class="container">
+<div class="container clearfix">
   <div
     class="spell spell-large"
     style="border-color: {{ spell.color }}"
@@ -16,5 +16,8 @@
   <div class="spell_name_container">
     <h2 class="spell_name">{{ spell.name }}</h2>
   </div>
+</div>
+<div class="container">
+  <pre class="spell_content"><code>{{spell|json(4)}}</code></pre>
 </div>
 {% endblock %}
