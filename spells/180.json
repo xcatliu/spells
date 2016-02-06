@@ -1,0 +1,16 @@
+{
+  "hue": 180,
+  "color": "hsl(180, 100%, 50%)",
+  "name": "Sleep",
+  "icon": "fa-bed",
+  "description": "Balabala...",
+  "type": 3,
+  "cost": 10,
+  "cooldown": 5,
+  "effects": [
+    {
+      "effect_type": 3,
+      "duration": 3
+    }
+  ]
+}

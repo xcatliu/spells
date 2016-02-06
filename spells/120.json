@@ -1,0 +1,16 @@
+{
+  "hue": 120,
+  "color": "hsl(120, 100%, 50%)",
+  "name": "Heal",
+  "icon": "fa-plus",
+  "description": "Balabala...",
+  "type": 2,
+  "cost": 10,
+  "cooldown": 0,
+  "effects": [
+    {
+      "effect_type": 2,
+      "restore": 10
+    }
+  ]
+}

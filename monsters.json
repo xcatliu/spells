@@ -1,0 +1,11 @@
+[
+  {
+    "id": 0,
+    "health": 50,
+    "mana": 0,
+    "attack": 10,
+    "defense": 5,
+    "magic_resistance": 10,
+    "spells": []
+  }
+]
