@@ -1,4 +1,4 @@
-/* eslint no-console:0 */
+/* eslint no-console:0, no-use-before-define:0 */
 
 const gulp = require('gulp');
 
@@ -76,3 +76,40 @@ gulp.task('serve', () => {
 });
 
 gulp.task('prepublish', ['clean:lib', 'build:lib']);
+
+/* util */
+gulp.task('generate_spells', () => {
+  let i;
+  let obj;
+  const fs = require('fs');
+  const path = require('path');
+  for (i = 0; i < 360; i++) {
+    if (i === 0) continue;
+    if (i === 60) continue;
+    if (i === 120) continue;
+    if (i === 180) continue;
+    if (i === 240) continue;
+    if (i === 300) continue;
+    obj = {
+      hue: i,
+      color: 'hsl(' + i + ', 100%, 50%)',
+      name: '?',
+      icon: 'fa-question',
+      description: 'Balabala...',
+      type: 0,
+      cost: 999,
+      cooldown: 0,
+      effects: [],
+    };
+    fs.writeFileSync(
+      path.resolve(__dirname, 'src/spells', stringify(i) + '.json'),
+      JSON.stringify(obj, null, 2) + '\n', 'utf-8'
+    );
+  }
+
+  function stringify(num) {
+    if (num < 10) return '00' + num;
+    if (num < 100) return '0' + num;
+    return num;
+  }
+});
