@@ -1,7 +1,7 @@
 {
   "name": "spells",
   "version": "0.0.0",
-  "description": "360 spells of 360 colors",
+  "description": "360 Spells of 360 Colors",
   "main": "lib/index.js",
   "scripts": {
     "start": "gulp",

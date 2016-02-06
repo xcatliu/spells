@@ -1,8 +1,10 @@
 # Spells
 
-> 360 spells of 360 colors
+> 360 Spells of 360 Colors
 
-## Introduce
+Homepage: http://spells.xcatliu.com/
+
+## Introduction
 
 This is a subproject of [The War of Colors](https://github.com/xcatliu/the-war-of-colors).
 
@@ -18,6 +20,8 @@ Each hue represents a spell, there are 360 spells of 360 colors.
 | [180] | `#00ffff` | Sleep | Illusion | 10 | 5 | Stun-3 | |
 | [240] | `#0000ff` | Summon Water Elemental | Summon | 50 | 10 | Summon-10-Water-Elemental | |
 | [300] | `#ff00ff` | Poison | Debuff | 10 | 0 | Magical-DoT-5-1-3 | |
+
+Checkout more spells: http://spells.xcatliu.com/
 
 ## Links
 
