@@ -1,5 +1,15 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<h1>360 Spells of 360 Colrs</h1>
+<h1 class="h1">360 Spells of 360 Colors</h1>
+<div class="container clearfix">
+  {% for spell in spells %}
+  <a class="index_spell" style="border-color: {{ spell.color }}" href="{{ spell.spell_html }}">
+    <i
+      class="index_spell_icon fa {{ spell.icon }}"
+      style="color: {% if spell.cost === 999 %}#333{% else %}{{ spell.color }}{% endif %}"
+    ></i>
+  </a>
+  {% endfor %}
+</div>
 {% endblock %}

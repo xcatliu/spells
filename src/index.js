@@ -11,7 +11,11 @@ import zh_CN from './zh_CN.json';
 const spellsFiles = fs.readdirSync(path.resolve(__dirname, 'spells'));
 
 const spells = spellsFiles.map((fileName) => {
-  return require(path.resolve(__dirname, 'spells', fileName));
+  const spell = require(path.resolve(__dirname, 'spells', fileName));
+  const basename = path.basename(fileName, '.json');
+  spell.spell_json = '/spells/' + basename + '.json';
+  spell.spell_html = '/spells/' + basename + '.html';
+  return spell;
 });
 
 export {

@@ -1,3 +1,54 @@
+.clearfix {
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
 body {
-  background: #f3f3f4;
+  background: black;
+  color: white;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  // http://us.battle.net/wow/en/
+  font-family: "Palatino Linotype", Georgia, Times, sans-serif;
+  font-weight: normal;
+}
+.h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+  @media (min-width: 960px) {
+    width: 960px;
+  }
+  @media (min-width: 640px) and (max-width: 959px) {
+    width: 640px;
+  }
+  @media (max-width: 639px) {
+    width: 320px;
+  }
+}
+
+.index_spell {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-width: 5px;
+  border-radius: 15px;
+  border-style: solid;
+  float: left;
+  text-align: center;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.index_spell_icon {
+  font-size: 40px;
+  line-height: 50px;
 }
