@@ -23,6 +23,21 @@ Each hue represents a spell, there are 360 spells of 360 colors.
 
 Checkout more spells: http://spells.xcatliu.com/
 
+## Contribution
+
+### Getting Start
+
+```shell
+npm install
+npm start
+```
+
+### Deploy Site
+
+```shell
+npm run deploy
+```
+
 ## Links
 
 - http://hslpicker.com/
