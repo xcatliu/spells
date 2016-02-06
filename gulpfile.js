@@ -4,24 +4,24 @@ const gulp = require('gulp');
 
 /* default */
 gulp.task('default', ['build:site:watch', 'serve']);
+gulp.task('prepublish', ['clean:lib', 'build:lib']);
+gulp.task('deploy', ['build:site', 'deploy:gh-pages']);
 
 /* clean */
-gulp.task('clean', ['clean:gh-pages', 'clean:lib']);
+gulp.task('clean:lib', () => {
+  const rimraf = require('rimraf');
+  rimraf.sync('./lib');
+});
 
 gulp.task('clean:gh-pages', () => {
   const rimraf = require('rimraf');
   rimraf.sync('./gh-pages');
 });
 
-gulp.task('clean:lib', () => {
-  const rimraf = require('rimraf');
-  rimraf.sync('./lib');
-});
-
 /* build lib */
-gulp.task('build:lib', ['clean:lib', 'build:lib:copy', 'build:lib:babel']);
+gulp.task('build:lib', ['clean:lib', 'build:lib:json', 'build:lib:babel']);
 
-gulp.task('build:lib:copy', () => {
+gulp.task('build:lib:json', () => {
   gulp.src('./src/**/*.json')
     .pipe(gulp.dest('./lib'));
 });
@@ -36,20 +36,25 @@ gulp.task('build:lib:babel', () => {
 /* build site */
 gulp.task('build:site', [
   'clean:gh-pages',
-  'build:site:copy',
+  'build:site:CNAME',
+  'build:site:json',
   'build:site:sass',
   'build:site:index',
   'build:site:spells',
 ]);
 
 gulp.task('build:site:watch', ['build:site'], () => {
-  gulp.watch('./src/**/*.json', ['build:site:copy']);
+  gulp.watch('./src/**/*.json', ['build:site:json']);
   gulp.watch('./site/**/*.html', ['build:site:index', 'build:site:spells']);
   gulp.watch('./site/sass/**', ['build:site:sass']);
 });
 
-gulp.task('build:site:copy', () => {
+gulp.task('build:site:json', () => {
   gulp.src('./src/**/*.json').pipe(gulp.dest('./gh-pages'));
+});
+
+gulp.task('build:site:CNAME', () => {
+  gulp.src('./site/CNAME').pipe(gulp.dest('./gh-pages'));
 });
 
 gulp.task('build:site:sass', () => {
@@ -108,7 +113,31 @@ gulp.task('serve', () => {
   console.log('ecstatic serving gh-pages at http://0.0.0.0:8080');
 });
 
-gulp.task('prepublish', ['clean:lib', 'build:lib']);
+/* deploy:gh-pages */
+gulp.task('deploy:gh-pages', (cb) => {
+  const exec = require('child_process').exec;
+  const cmd = [
+    'rm -rf .deploy',
+    'git clone git@github.com:xcatliu/spells.git .deploy',
+    'cd .deploy',
+    'git checkout gh-pages',
+    'rsync -a ../gh-pages/ ./',
+    'git add :',
+    'git commit -m "Update gh-pages"',
+    'git push origin gh-pages',
+    'cd ..',
+    'rm -rf .deploy',
+  ].join(' && ');
+  exec(cmd, (error, stdout, stderr) => {
+    console.log(`stdout: ${stdout}`);
+    console.log(`stderr: ${stderr}`);
+    if (error !== null) {
+      console.log(`exec error: ${error}`);
+      return cb(error);
+    }
+    cb();
+  });
+});
 
 /* util */
 gulp.task('generate_spells', () => {
@@ -138,7 +167,6 @@ gulp.task('generate_spells', () => {
       JSON.stringify(obj, null, 2) + '\n', 'utf-8'
     );
   }
-
 });
 
 function numberToString(num) {
