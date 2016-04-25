@@ -1,11 +1,20 @@
 {
   "hue": 210,
   "color": "hsl(210, 100%, 50%)",
-  "name": "?",
-  "icon": "fa-question",
+  "name": "Icebolt",
+  "icon": "fa-asterisk",
   "description": "Balabala...",
   "type": 0,
-  "cost": 999,
-  "cooldown": 0,
-  "effects": []
+  "cost": 10,
+  "cooldown": 2,
+  "effects": [
+    {
+      "effect_type": 0,
+      "damage": 5
+    },
+    {
+      "effect_type": 3,
+      "duration": 1
+    }
+  ]
 }

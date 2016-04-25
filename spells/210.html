@@ -16,28 +16,39 @@
   <div
     class="spell spell-large"
     style="border-color: hsl(210, 100%, 50%)"
-    title="?"
+    title="Icebolt"
   >
     <i
-      class="spell_icon fa fa-question"
-      style="color: #333"
+      class="spell_icon fa fa-asterisk"
+      style="color: hsl(210, 100%, 50%)"
     ></i>
   </div>
   <div class="spell_name_container">
-    <h2 class="spell_name">?</h2>
+    <h2 class="spell_name">Icebolt</h2>
   </div>
 </div>
 <div class="container">
   <pre class="spell_content"><code>{
     &quot;hue&quot;: 210,
     &quot;color&quot;: &quot;hsl(210, 100%, 50%)&quot;,
-    &quot;name&quot;: &quot;?&quot;,
-    &quot;icon&quot;: &quot;fa-question&quot;,
+    &quot;name&quot;: &quot;Icebolt&quot;,
+    &quot;icon&quot;: &quot;fa-asterisk&quot;,
     &quot;description&quot;: &quot;Balabala...&quot;,
     &quot;type&quot;: 0,
-    &quot;cost&quot;: 999,
-    &quot;cooldown&quot;: 0,
-    &quot;effects&quot;: [],
+    &quot;cost&quot;: 10,
+    &quot;cooldown&quot;: 2,
+    &quot;effects&quot;: [
+        {
+            &quot;effect_type&quot;: 0,
+            &quot;damage&quot;: 5,
+            &quot;effect_type_name&quot;: &quot;Magical Damage&quot;
+        },
+        {
+            &quot;effect_type&quot;: 3,
+            &quot;duration&quot;: 1,
+            &quot;effect_type_name&quot;: &quot;Stun&quot;
+        }
+    ],
     &quot;spell_json&quot;: &quot;/spells/210.json&quot;,
     &quot;spell_html&quot;: &quot;/spells/210.html&quot;,
     &quot;type_name&quot;: &quot;Damage&quot;
