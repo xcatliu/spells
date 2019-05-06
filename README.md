@@ -1,5 +1,7 @@
 # Spells
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xcatliu/spells.svg)](https://greenkeeper.io/)
+
 > 360 Spells of 360 Colors
 
 Homepage: http://spells.xcatliu.com/
